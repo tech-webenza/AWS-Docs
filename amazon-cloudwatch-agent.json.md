@@ -31,15 +31,15 @@
 ```
 # Explanation:
 
-- "metrics_collection_interval": 60 → collects every 60 seconds.
+- `"metrics_collection_interval"`: 60 → collects every 60 seconds.
 
-- "mem_used_percent" → pushes memory usage percentage.
+- `"mem_used_percent"` → pushes memory usage percentage.
 
-- "disk" → "used_percent" → pushes disk usage percentage.
+- `"disk" → "used_percent"` → pushes disk usage percentage.
 
-- "resources": ["/"] → monitors root filesystem only (/).
+- `"resources": ["/"]` → monitors root filesystem only (/).
 
-  - You can add more, e.g. ["/", "/home", "/var"].
+  - You can add more, e.g. `["/", "/home", "/var"]`.
 
 ## Where to Apply the 80% Threshold
 
@@ -49,10 +49,10 @@
 
   2. Select the metric:
 
-    - CWAgent → InstanceId → mem_used_percent
+    - `CWAgent → InstanceId → mem_used_percent`
 
-    - CWAgent → InstanceId → disk_used_percent
+    - `CWAgent → InstanceId → disk_used_percent`
 
   3. Set condition:
 
-    - Threshold: Greater than 80% for 5 minutes.
+    - Threshold: `Greater than 80%` for 5 minutes.
